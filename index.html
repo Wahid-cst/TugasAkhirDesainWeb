@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tugas Akhir Desain Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <span class="brand-tag">W/</span>
+      <span class="navbar-brand-text">WAHID</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="moreDD" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">More</a>
+          <ul class="dropdown-menu" aria-labelledby="moreDD">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-person me-2"></i>Resume</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-pen me-2"></i>Blog</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-github me-2"></i>GitHub</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="ms-lg-3 mt-2 mt-lg-0">
+        <a href="#contact" class="btn-nb btn-nb-black">
+          <i class="bi bi-lightning-fill"></i>Hire Me
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb-strip">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#home"><i class="bi bi-house-fill"></i> Home</a></li>
+        <li class="breadcrumb-item"><a href="#projects">Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Portfolio · Wahid</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<section id="home" class="p-0" style="border-bottom:var(--nb-border);">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
+
+    <div class="carousel-indicators" style="bottom:18px;">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active slide-yellow">
+        <div class="container hero-slide">
+          <div class="row align-items-center g-4 w-100">
+            <div class="col-lg-6">
+              <span class="section-badge mb-3 d-block" style="width:fit-content;"> Halo</span>
+              <h1 class="section-title mb-3">
+                Saya<br>
+                <span style="background:var(--nb-black);color:var(--nb-yellow);padding:0 .10em;">Wahid</span><br>
+              </h1>
+              <p style="font-family:var(--font-body);font-size:1rem;max-width:460px;line-height:1.8;margin-bottom:2rem;">
+                Mahasiswa Informatika, 18 tahun. Generalis di bidang IT. dari web development, jaringan, hingga sistem informasi. Siap berkolaborasi!
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#projects" class="btn-nb btn-nb-black"><i class="bi bi-grid-3x3-gap-fill"></i>Lihat Projects</a>
+                <a href="#contact"  class="btn-nb btn-nb-white"><i class="bi bi-envelope-fill"></i>Contact Me</a>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <div class="anim-float d-inline-block">
+                <img src="FOTO_FORMAL.jpg" alt="Wahid" class="profile-img-nb" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item slide-lime">
+        <div class="container hero-slide">
+          <div class="row align-items-center g-4 w-100">
+            <div class="col-lg-6">
+              <span class="section-badge mb-3 d-block" style="width:fit-content;">Available for Work</span>
+              <h1 class="section-title mb-4">
+                Let's Build<br>Something
+                <span style="background:var(--nb-black);color:var(--nb-yellow);padding:0 .15em;">Great!</span>
+              </h1>
+              <p style="font-family:var(--font-body);font-size:1rem;max-width:420px;line-height:1.8;margin-bottom:1.5rem;">
+                Terbuka untuk project freelance, magang, dan kolaborasi kreatif. Hubungi saya sekarang!
+              </p>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#contact" class="btn-nb btn-nb-black"><i class="bi bi-chat-fill"></i>Mulai Chat</a>
+                <a href="#"        class="btn-nb btn-nb-white"><i class="bi bi-download"></i>Download CV</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6"><div class="stat-box" style="background:#fff;"><div class="num">10+</div><div class="lbl">Projects Done</div></div></div>
+                <div class="col-6"><div class="stat-box" style="background:var(--nb-yellow);"><div class="num">1+</div><div class="lbl">Years Coding</div></div></div>
+                <div class="col-6"><div class="stat-box" style="background:var(--nb-cyan);"><div class="num">18</div><div class="lbl">Tahun</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-nb prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="carousel-control-nb next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>HTML <span class="marquee-dot">★</span></span>
+    <span>CSS <span class="marquee-dot">★</span></span>
+    <span>JavaScript <span class="marquee-dot">★</span></span>
+    <span>Adobe Illustrator <span class="marquee-dot">★</span></span>
+    <span>Adobe Photoshop <span class="marquee-dot">★</span></span>
+    <span>Adobe After Effect <span class="marquee-dot">★</span></span>
+    <span>UI/UX Design <span class="marquee-dot">★</span></span>
+    <span>Figma <span class="marquee-dot">★</span></span>
+    <span>Git &amp; GitHub <span class="marquee-dot">★</span></span>
+    <!-- duplicate for seamless loop -->
+    <span>HTML <span class="marquee-dot">★</span></span>
+    <span>CSS <span class="marquee-dot">★</span></span>
+    <span>JavaScript <span class="marquee-dot">★</span></span>
+    <span>Adobe Illustrator <span class="marquee-dot">★</span></span>
+    <span>Adobe Photoshop <span class="marquee-dot">★</span></span>
+    <span>Adobe After Effect <span class="marquee-dot">★</span></span>
+    <span>UI/UX Design <span class="marquee-dot">★</span></span>
+    <span>Figma <span class="marquee-dot">★</span></span>
+    <span>Git &amp; GitHub <span class="marquee-dot">★</span></span>
+  </div>
+</div>
+
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <div class="col-lg-5 fade-up">
+        <span class="section-badge">About Me</span>
+        <h2 class="section-title mt-3 mb-4">Siapa<br>Saya?</h2>
+        <p style="font-family:var(--font-body);line-height:1.85;margin-bottom:.75rem;">
+          Halo! Nama saya <strong>Wahid</strong>, mahasiswa <strong>Jurusan Teknik Informatika dan komputer</strong> di <strong>Politeknik Negeri ujung Pandang.</strong> Saya berusia 18 tahun. Saya memiliki minat di berbagai bidang teknologi informasi mulai dari pemrograman, desain grafis, hingga video editing. Bisa dibilang saya adalah seorang <strong>IT Generalis</strong>
+
+        <ul class="list-unstyled info-list">
+          <li>
+            <strong>Lokasi:</strong> Makassar, Sulawesi Selatan
+            <button class="btn popover-btn ms-auto" style="background:var(--nb-yellow);"
+              data-bs-toggle="popover" data-bs-placement="top"
+              data-bs-title="Lokasi"
+              data-bs-content="Berdomisili di Makassar, Sulawesi Selatan. Siap kerja remote maupun on-site di seluruh Indonesia!">?</button>
+          </li>
+          <li>
+            <strong>Pendidikan:</strong> D4 Teknik Multimedia dan Jaringan
+            <button class="btn popover-btn ms-auto" style="background:var(--nb-cyan);"
+              data-bs-toggle="popover" data-bs-placement="top"
+              data-bs-title="Pendidikan"
+              data-bs-content="Sedang menempuh D4 Teknik Multimedia dan Jaringan. Aktif dalam kegiatan akademik dan organisasi kampus.">?</button>
+          </li>
+          <li><strong>Bahasa:</strong> Indonesia, English</li>
+          <li><strong>Hobi:</strong> Coding, Gaming, Design</li>
+        </ul>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#" class="btn-nb btn-nb-black"><i class="bi bi-download"></i>Download CV</a>
+          <a href="#contact" class="btn-nb btn-nb-yellow"><i class="bi bi-chat"></i>Hire Me</a>
+        </div>
+      </div>
+
+      <div class="col-lg-7 fade-up">
+        <div class="row g-3 mb-3">
+          <div class="col-6"><div class="stat-box" style="background:var(--nb-yellow);"><div class="num">10+</div><div class="lbl">Projects Completed</div></div></div>
+          <div class="col-6"><div class="stat-box" style="background:var(--nb-cyan);">  <div class="num">1+</div> <div class="lbl">year Experience</div></div></div>
+          <div class="col-6"><div class="stat-box" style="background:var(--nb-lime);">  <div class="num">∞</div>  <div class="lbl">Semangat Belajar</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills-section py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <span class="section-badge">What I Know</span>
+        <h2 class="section-title mt-3" style="color:#fff;">Skills &amp;<br>Kemampuan</h2>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <p style="font-family:var(--font-mono);color:var(--nb-yellow);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem;">// technical_skills</p>
+
+        <div class="mb-3">
+          <span class="skill-tag" style="color:var(--nb-cyan);">Basic C++</span>
+          <span class="skill-tag" style="color:var(--nb-lime);">Basic Python</span>
+          <span class="skill-tag" style="color:var(--nb-yellow);">Adobe Illustrator</span>
+          <span class="skill-tag" style="color:var(--nb-cyan);">Adobe Photoshop</span>
+          <span class="skill-tag" style="color:var(--nb-white);">Figma</span>
+          <span class="skill-tag" style="color:var(--nb-orange);">Fotografi dasar</span>
+        </div>
+
+        <div style="border:2px solid rgba(255,255,255,.2);padding:1.5rem;background:rgba(255,255,255,.04);">
+          <p style="font-family:var(--font-mono);color:var(--nb-yellow);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.85rem;">⚡ Currently Learning</p>
+          <div>
+            <span class="skill-tag" style="color:var(--nb-lime);border-style:dashed;">Video Editing</span>
+            <span class="skill-tag" style="color:var(--nb-cyan);border-style:dashed;">C++ Tingkat lanjut</span>
+            <span class="skill-tag" style="color:var(--nb-orange);border-style:dashed;">Desain website</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <p style="font-family:var(--font-mono);color:var(--nb-yellow);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem;">// soft_skills &amp; tools</p>
+
+        <div class="mb-3">
+          <span class="skill-tag" style="color:var(--nb-pink);">Kerja sama tim</span>
+          <span class="skill-tag" style="color:var(--nb-cyan);">Komunikasi efektif</span>
+          <span class="skill-tag" style="color:var(--nb-orange);">Berpikir Kritis</span>
+          <span class="skill-tag" style="color:var(--nb-lime);">Adaptabilitas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section py-5">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-badge">My Work</span>
+      <h2 class="section-title mt-3">Projects <span class="highlight">Terbaru</span></h2>
+      <p style="font-family:var(--font-body);max-width:480px;margin:1rem auto 0;line-height:1.7;">
+        Beberapa projek yang telah saya kerjakan
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4 fade-up">
+        <div class="project-card">
+          <img src="Get Started.png" class="card-img-top" alt="Project 1" />
+          <div class="card-body p-3">
+            <div class="mb-2">
+              <span class="proj-tag">UI/UX Design</span>
+              <span class="proj-tag" style="background:var(--nb-cyan);">Figma</span>
+            </div>
+            <h5 class="card-title">Project 1</h5>
+            <p style="font-family:var(--font-body);font-size:.87rem;line-height:1.65;color:#444;">
+              Design UI aplikasi mobile.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.1s;">
+        <div class="project-card">
+          <img src="Feeds.png" class="card-img-top" alt="Project 2" />
+          <div class="card-body p-3">
+            <div class="mb-2">
+              <span class="proj-tag" style="background:var(--nb-pink);">Figma</span>
+              <span class="proj-tag" style="background:var(--nb-orange);">Adobe Illustrator</span>
+              <span class="proj-tag" style="background:var(--nb-lime);">Graphic Design</span>
+            </div>
+            <h5 class="card-title">Project 2</h5>
+            <p style="font-family:var(--font-body);font-size:.87rem;line-height:1.65;color:#444;">
+              Membuat design logo, poster serta puzzle feed Instagram untuk mempromosikan toko busana muslim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 – Video -->
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.2s;">
+        <div class="project-card">
+          <div style="border-bottom:var(--nb-border);background:#000;position:relative;">
+            <video
+              src="NurWahidIrianto_47225066_MotionGrafis1.mp4"
+              controls
+              style="width:100%;height:190px;object-fit:cover;display:block;"
+            >
+            </video>
+          </div>
+          <div class="card-body p-3">
+            <div class="mb-2">
+              <span class="proj-tag" style="background:var(--nb-pink);">Video Editing</span>
+              <span class="proj-tag" style="background:var(--nb-cyan);">Multimedia</span>
+            </div>
+            <h5 class="card-title">Project 3</h5>
+            <p style="font-family:var(--font-body);font-size:.87rem;line-height:1.65;color:#444;">
+              Animasi motion graphics berupa reveal text.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 – Coming Soon -->
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.2s;">
+        <div class="project-card" style="background:var(--nb-black);">
+          <div class="card-body p-4 d-flex flex-column" style="min-height:320px;">
+            <p style="font-family:var(--font-mono);color:var(--nb-yellow);font-size:.7rem;margin-bottom:1rem;">// next_project.js</p>
+            <h5 style="color:#fff;font-family:var(--font-display);font-size:1.5rem;line-height:1.2;margin-bottom:1rem;">
+              Coming<br>Soon...
+            </h5>
+            <p style="font-family:var(--font-body);color:rgba(255,255,255,.55);font-size:.87rem;line-height:1.65;flex:1;">
+              Project baru sedang dalam pengerjaan. Akan segera hadir!
+            </p>
+            <a href="#contact" class="btn-nb btn-nb-yellow" style="font-size:.7rem;padding:.5rem 1rem;align-self:flex-start;">
+              <i class="bi bi-bell-fill"></i>Notify Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="#" class="btn-nb btn-nb-black"><i class="bi bi-github"></i>Lihat Semua di GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience-section py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <span class="section-badge">My Journey</span>
+        <h2 class="section-title mt-3">Experience &amp;<br>Education</h2>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <h4 style="font-family:var(--font-display);margin-bottom:2rem;">
+        <i class="bi bi-mortarboard-fill me-2"></i>Education
+      </h4>
+      <div class="timeline-item">
+        <div class="timeline-date">2025 – Selesai</div>
+        <h5 class="timeline-title">Politeknik Negeri Ujung Pandang</h5>
+        <p style="font-family:var(--font-body);font-size:.87rem;line-height:1.75;">
+          Jurusan Teknik Informatika dan Komputer, Program Studi D4 Teknik Multimedia dan Jaringan
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section py-5">
+  <div class="container">
+    <div class="row mb-5 g-4 align-items-end">
+      <div class="col-lg-6">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title mt-3">Frequently Asked<br>Questions</h2>
+      </div>
+    </div>
+
+    <div class="accordion accordion-nb" id="faqAcc">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+            <span class="faq-num">01.</span>Apa layanan yang kamu tawarkan?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+          <div class="accordion-body">
+            Saya menawarkan jasa multimedia seperti pembuatan website, editing video maupun desain grafis.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+            <span class="faq-num">02.</span>Berapa lama waktu pengerjaan?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body">
+            Tergantung kompleksitas project. Timeline pasti selalu didiskusikan di awal project.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+            <span class="faq-num">03.</span>Pertanyaan lain
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body">
+            Jika ada pertanyaan lain bisa langsung menghubungi kontak yang tertera
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-badge">Get In Touch</span>
+      <h2 class="section-title mt-3">Hubungi <span class="highlight">Saya</span></h2>
+      <p style="font-family:var(--font-body);max-width:460px;margin:1rem auto 0;line-height:1.75;">
+        Punya project atau pertanyaan? Hubungi saya — biasanya balas dalam 24 jam!
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Form -->
+      <div class="col-lg-7 fade-up">
+        <div style="border:var(--nb-border);box-shadow:var(--nb-shadow-lg);padding:2rem;background:#fff;">
+          <h5 style="font-family:var(--font-display);margin-bottom:1.5rem;">Kirim Pesan</h5>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="label-nb d-block mb-2">Nama Lengkap</label>
+              <input type="text" class="form-control input-nb" placeholder="John Doe" />
+            </div>
+            <div class="col-sm-6">
+              <label class="label-nb d-block mb-2">Email Address</label>
+              <input type="email" class="form-control input-nb" placeholder="john@example.com" />
+            </div>
+            <div class="col-12">
+              <label class="label-nb d-block mb-2">Subjek</label>
+              <input type="text" class="form-control input-nb" placeholder="Misal: Request Project Website" />
+            </div>
+            <div class="col-12">
+              <label class="label-nb d-block mb-2">Pesan</label>
+              <textarea class="form-control input-nb" rows="5" placeholder="Ceritakan detail project atau pertanyaan kamu di sini..."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="button" id="sendBtn" class="btn-nb btn-nb-black w-100" style="justify-content:center;padding:.85rem;">
+                <i class="bi bi-send-fill"></i>Kirim Pesan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="col-lg-5 fade-up">
+        <div class="contact-info-card">
+          <h5 style="font-family:var(--font-display);margin-bottom:1.5rem;">Info Kontak</h5>
+
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-lbl">Email</div>
+              <a class="contact-val" href="mailto:nurwahidrian29@gmail.com">nurwahidrian29@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+            <div>
+              <div class="contact-lbl">WhatsApp</div>
+              <a class="contact-val" href="https://wa.me/6281229138513">+62 812-2913-8513</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-lbl">Lokasi</div>
+              <span class="contact-val">Makassar, Sulawesi Selatan</span>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-github"></i></div>
+            <div>
+              <div class="contact-lbl">GitHub</div>
+              <a class="contact-val" href="#">github.com/Wahid-cst</a>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="label-nb mb-2">Social Media</p>
+            <div class="d-flex flex-wrap gap-1">
+              <a href="#" class="btn-nb btn-nb-black" style="font-size:.8rem;padding:.45rem .9rem;"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="btn-nb btn-nb-black" style="font-size:.8rem;padding:.45rem .9rem;"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="btn-nb btn-nb-black" style="font-size:.8rem;padding:.45rem .9rem;"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="btn-nb btn-nb-black" style="font-size:.8rem;padding:.45rem .9rem;"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-nb">
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div style="font-family:var(--font-display);font-size:2rem;color:#fff;margin-bottom:.75rem;">
+          <span style="background:var(--nb-yellow);color:var(--nb-black);padding:.05em .25em;">W/</span>AHID
+        </div>
+        <p style="font-family:var(--font-body);color:rgba(255,255,255,.55);font-size:.87rem;line-height:1.75;max-width:280px;">
+          Mahasiswa Informatika & IT Generalist yang passionate di dunia teknologi. Let's build something great together!
+        </p>
+        <div class="mt-3">
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Frontend Dev</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Freelance</a></li>
+          <li><a href="#">Konsultasi</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h6>Newsletter</h6>
+        <p style="font-family:var(--font-mono);font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:.85rem;">Daftar untuk update project terbaru:</p>
+        <div class="d-flex">
+          <input type="email" class="form-control" style="border:2px solid rgba(255,255,255,.25);border-right:none;border-radius:0;background:rgba(255,255,255,.06);color:#fff;font-family:var(--font-mono);font-size:.78rem;" placeholder="email@kamu.com" />
+          <button class="btn-nb btn-nb-yellow" style="border-radius:0;padding:.5rem 1rem;flex-shrink:0;">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="mt-3">
+          <div class="dropdown dropup">
+            <button type="button" class="btn-nb" style="background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.2);color:#fff;font-size:.72rem;padding:.4rem .85rem;"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe2 me-1"></i>Visit Other Sites
+            </button>
+            <ul class="dropdown-menu" style="background:var(--nb-black)!important;">
+              <li><a class="dropdown-item" style="color:rgba(255,255,255,.7);" href="#">my-blog.com</a></li>
+              <li><a class="dropdown-item" style="color:rgba(255,255,255,.7);" href="#">github.com/wahid-cst</a></li>
+              <li><hr class="dropdown-divider" style="border-color:rgba(255,255,255,.15)!important;"></li>
+              <li><a class="dropdown-item" style="color:rgba(255,255,255,.7);" href="#">dribbble.com/wahid</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom pt-4 mt-4">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item" style="color:rgba(255,255,255,.35);">&copy; 2026 Wahid. All rights reserved.</li>
+            <li class="list-inline-item ms-2"><a href="#" style="display:inline;color:rgba(255,255,255,.35);font-size:.72rem;padding:0;font-family:var(--font-mono);">Privacy Policy</a></li>
+            <li class="list-inline-item ms-2"><a href="#" style="display:inline;color:rgba(255,255,255,.35);font-size:.72rem;padding:0;font-family:var(--font-mono);">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end mt-2 mt-md-0">
+          <span style="color:rgba(255,255,255,.3);font-family:var(--font-mono);font-size:.72rem;">
+            Made with <span style="color:var(--nb-pink);">♥</span> in Makassar
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<a id="scrollTopBtn" href="#home"><i class="bi bi-arrow-up"></i></a>
+
+<!-- Toast Notification -->
+<div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index:11000;">
+  <div id="msgToast" class="toast align-items-center" role="alert"
+    style="border:var(--nb-border);border-radius:0;box-shadow:var(--nb-shadow);background:var(--nb-lime);font-family:var(--font-mono);font-size:.8rem;font-weight:700;">
+    <div class="d-flex">
+      <div class="toast-body">✅ Pesan berhasil dikirim! Terima kasih 🎉</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
